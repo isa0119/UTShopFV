@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "582400719806",
+    "firebase_url": "https://utstore-bf05e-default-rtdb.firebaseio.com",
+    "project_id": "utstore-bf05e",
+    "storage_bucket": "utstore-bf05e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582400719806:android:b6d3a89c17dea3312b17ef",
+        "android_client_info": {
+          "package_name": "com.example.utshop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_SjuulcGWUZkz_rExffD0XrpWlzRGGuU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

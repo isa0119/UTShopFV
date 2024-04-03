@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.gallery.GalleryFragment">
+
+
+    <TextView
+        android:id="@+id/textGallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:padding="16dp"
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <!-- Contenedor para un edificio 1 -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/imageButtonBuilding1"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginBottom="8dp"
+                android:background="@null"
+                android:contentDescription="@string/desc_building1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/colegio"
+                app:layout_constraintBottom_toTopOf="@+id/textViewBuilding1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/textViewBuilding1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edificio 1"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonBuilding1" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- Contenedor para un edificio 2 -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/imageButtonBuilding2"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginBottom="8dp"
+                android:background="@null"
+                android:contentDescription="@string/desc_building1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/colegio"
+                app:layout_constraintBottom_toTopOf="@+id/textViewBuilding2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/textViewBuilding2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edificio 2"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonBuilding2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- Contenedor para un edificio 3 -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/imageButtonBuilding3"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginBottom="8dp"
+                android:background="@null"
+                android:contentDescription="@string/desc_building1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/colegio"
+                app:layout_constraintBottom_toTopOf="@+id/textViewBuilding3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/textViewBuilding3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edificio 3"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonBuilding3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- Contenedor para un edificio 4 -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/imageButtonBuilding4"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginBottom="8dp"
+                android:background="@null"
+                android:contentDescription="@string/desc_building1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/colegio"
+                app:layout_constraintBottom_toTopOf="@+id/textViewBuilding4"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/textViewBuilding4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edificio 4"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonBuilding4" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- Contenedor para un edificio 5-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/imageButtonBuilding5"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginBottom="8dp"
+                android:background="@null"
+                android:contentDescription="@string/desc_building1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/colegio"
+                app:layout_constraintBottom_toTopOf="@+id/textViewBuilding5"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/textViewBuilding5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edificio 5"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonBuilding5" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- Contenedor para un edificio 6-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/imageButtonBuilding6"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginBottom="8dp"
+                android:background="@null"
+                android:contentDescription="@string/desc_building1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/colegio"
+                app:layout_constraintBottom_toTopOf="@+id/textViewBuilding6"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/textViewBuilding6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edificio 6"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonBuilding6" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- Contenedor para un edificio 7-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/imageButtonBuilding7"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginBottom="8dp"
+                android:background="@null"
+                android:contentDescription="@string/desc_building1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/colegio"
+                app:layout_constraintBottom_toTopOf="@+id/textViewBuilding7"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/textViewBuilding7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edificio 7"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonBuilding7" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- Contenedor para un edificio 8-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/imageButtonBuilding8"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginBottom="8dp"
+                android:background="@null"
+                android:contentDescription="@string/desc_building1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/colegio"
+                app:layout_constraintBottom_toTopOf="@+id/textViewBuilding8"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/textViewBuilding8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edificio 8"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonBuilding8" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- Contenedor para un edificio 9-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/imageButtonBuilding9"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginBottom="8dp"
+                android:background="@null"
+                android:contentDescription="@string/desc_building1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/colegio"
+                app:layout_constraintBottom_toTopOf="@+id/textViewBuilding9"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/textViewBuilding9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edificio 9"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonBuilding9" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Repite el bloque anterior para cada edificio, ajustando los IDs y textos según sea necesario -->
+
+    </GridLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
