@@ -3,6 +3,7 @@ package com.example.utshop.ui.gallery
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.utshop.R
@@ -26,6 +27,10 @@ class BuildingActivity : AppCompatActivity() {
         HomeproductViewModel.loadBuildingProducts(Building.toString())
 
         HomeproductViewModel.products.observe(this) { productList ->
+            if (productList.isEmpty()){
+                binding.textarea.visibility = View.VISIBLE
+            }else{
+                binding.textarea.visibility = View.GONE
             val adapter = HomeProductAdapter(productList,
                 onContainerClicked = { product -> val intent = Intent(this, ProductViewActivity::class.java)
                     // Aquí puedes pasar datos extras si es necesario, por ejemplo:
@@ -37,7 +42,7 @@ class BuildingActivity : AppCompatActivity() {
                     intent.putExtra("ProductOwner", product.email)
                     startActivity(intent) })
             binding.productsRecyclerView.adapter = adapter
-            binding.productsRecyclerView.layoutManager = LinearLayoutManager(this)
+            binding.productsRecyclerView.layoutManager = LinearLayoutManager(this)}
         }
     }
 }

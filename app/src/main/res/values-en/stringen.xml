@@ -5,6 +5,7 @@
     <string name="email_hint">Email</string>
     <string name="password_hint">Password</string>
     <string name="login">Login</string>
+    <string name="Tittle">UTShop</string>
     <string name="register">Register</string>
 
     <string name="select_hint">Select building</string>
@@ -33,6 +34,7 @@
 
     <string name="building1_name">Library</string>
     <string name="building2_name">Classroom</string>
+    <string name="empty_building">There isn´t any product or provider on this area</string>
     <string name="building3_name">Laboratories</string>
 
     <string name="desc_building1">Building 1</string>

@@ -2,8 +2,9 @@
     <string name="app_name">UTShop</string>
     <string name="email_hint">Correo Electrónico</string>
     <string name="password_hint">Contraseña</string>
-    <string name="login">Iniciar Sesión</string>
     <string name="register">Registrarse</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="Tittle">UTShop</string>
 
     <string name="name_hint">nombre de usuario</string>
     <string name="seller_hint">Vendedor: </string>
@@ -32,6 +33,7 @@
     <string name="building1_name">Biblioteca</string>
     <string name="building2_name">Aulario</string>
     <string name="building3_name">Laboratorios</string>
+    <string name="empty_building">Esta area no posee proveedores ni productos</string>
 
     <string name="desc_building1">Edificio 1</string>
     <!-- TODO: Remove or change this placeholder text -->
