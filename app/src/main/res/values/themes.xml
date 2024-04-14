@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.UTShop" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/Blue_light</item>
     </style>
 
     <style name="Theme.UTShop" parent="Base.Theme.UTShop" />
@@ -15,4 +15,10 @@
     <style name="Theme.UTShop.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.UTShop.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/cardview_dark_background</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/logo</item>
+        <item name="windowSplashScreenAnimationDuration">300</item>
+        <item name="postSplashScreenTheme">@style/Theme.UTShop</item>
+    </style>
 </resources>
